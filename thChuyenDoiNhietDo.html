@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+<form>
+<input type="number" id="input">
+    <input type="button" onclick="check4()" >
+    <p id="total">Celcius :</p>
+</form>
+</p>
+<script>
+   function check4(){
+       let number = parseInt(document.getElementById("input").value);
+       function check3(x){
+           return ( (x - 32)/1.8);
+       }
+       let kaka = check3(number);
+       document.getElementById("total").innerHTML="celcius : " +kaka
+   }
+</script>
+</body>
+</html>
